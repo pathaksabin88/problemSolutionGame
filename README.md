@@ -1,2 +1,0 @@
-# problemSolutionGame
-The PS Game
