@@ -1,0 +1,114 @@
+/*.padding-0{
+    padding-right:0;
+    padding-left:0;
+}*/
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row > div {
+  background: lightgrey;
+  border: 1px solid;
+}
+
+.first-div {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+.first-line {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.second-line {
+    font-size: 40px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#body {
+    padding-bottom: 50px; /* Height of the footer */
+}
+
+#otherFooter {
+    background: #1C4B6F;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 100px;
+}
+
+.myBtn {
+    height: 82px;
+}
+
+.flash-button{
+    background:#4B0082;
+    padding:5px 10px;
+    color:#ffffff;
+    border:none;
+    border-radius:5px;
+    width: 300px;
+    font-size: 30px;
+    
+    animation-name: flash;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    //Firefox 1+
+    -webkit-animation-name: flash;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    //Safari 3-4
+    -moz-animation-name: flash;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes flash {  
+    0% { opacity: 0.8; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+//Firefox 1+
+@-webkit-keyframes flash {  
+    0% { opacity: 0.8; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+//Safari 3-4
+@-moz-keyframes flash {  
+    0% { opacity: 0.8; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
